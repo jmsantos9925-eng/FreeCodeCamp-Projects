@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+#main {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: -1;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.08;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#img-div {
+    max-width: 500px;
+    margin: auto;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#img-caption {
+    margin-top: 10px;
+    color: lightgray;
+    font-size: 14px;
+}
+
+#title {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.subtitle {
+    max-width: 700px;
+    margin: auto;
+    color: lightgray;
+    font-size: 18px;
+}
+
+#tribute-info {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.about-section, .timeline-section, .impact-section, .facts-section, .tribute-footer {
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.timeline {
+    margin-top: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    margin-top: 8px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.timeline-item h3 {
+    margin: 0 0 5px;
+}
+
+.timeline-item p {
+    margin: 0;
+    color: lightgray;
+}
+
+.facts-section ul {
+    line-height: 1.8;
+}
+
+.tribute-footer {
+    text-align: center;
+}
+
+#tribute-link {
+    color: white;
+}
+
+#tribute-link:hover {
+    color: lightgray;
+}
+
+.source {
+    font-size: 14px;
+    color: ;
+}
