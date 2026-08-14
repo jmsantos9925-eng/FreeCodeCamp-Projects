@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bright Star Gas Station Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <img src="https://raw.githubusercontent.com/jmsantos9925-eng/img/ed7cc3d34a599885ae4b725e85cfe4ccb3a76e0e/gas.jpg" alt="Gas image">
 
+    <header class="header-box">
+      <h1 id="title">Bright Star Gas Station Survey Form</h1>
+      <p id="description">Thank you for taking time to help us improve our service</p>
+    </header>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input id="name" type="text" required placeholder="Enter here">
+
+      <label for="email" id="email-label">Email:</label>
+      <input id="email" type="email" required placeholder="Enter here">
+
+      <label for="number" id="number-label">Age:</label>
+      <input id="number" type="number" min="10" max="100" required placeholder="Enter here">
+
+      <p>Would you choose Bright Star Gas Station again for your next stop?</p>
+      <input type="radio" id="yes" value="Yes" name="pick">
+      <label for="yes">Yes</label><br>
+
+      <input type="radio" id="maybe" value="Maybe" name="pick">
+      <label for="maybe">Maybe</label><br>
+
+      <input type="radio" id="notsure" value="Not sure" name="pick">
+      <label for="notsure">Not sure</label><br>
+
+      <label for="dropdown">Which service do you use most often</label>
+      <select id="dropdown">
+        <option>Select an option</option>
+        <option>Fueling</option>
+        <option>Car wash</option>
+        <option>Restrooms</option>
+        <option>Other</option>
+      </select>
+
+      <p>What would you like us to improve? </p>
+      <div class="option-box">
+        <input type="checkbox" value="Fuel Prices"> Fuel Prices
+      </div>
+      <div class="option-box">
+        <input type="checkbox" value="Customer Service"> Customer Service
+      </div>
+      <div class="option-box">
+        <input type="checkbox" value="Car Wash"> Car Wash
+      </div>
+      <div class="option-box">
+        <input type="checkbox" value="Restroom Cleanliness"> Restroom Cleanliness
+      </div>
+      <div class="option-box">
+        <input type="checkbox" value="Safety"> Safety
+      </div>
+      <div class="option-box">
+        <input type="checkbox" value="Other Services"> Other Services
+      </div>
+
+      <label>Any comments or suggestions?</label>
+      <textarea placeholder="Enter here"></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
